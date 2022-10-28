@@ -307,5 +307,6 @@ fn main() -> Result<(), String> {
         .flush()
         .map_err(|err| format!("Unable to flush output buffer: {err}"))?;
 
+    info!("Done");
     Ok(())
 }
